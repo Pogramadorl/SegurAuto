@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+  <form id="formulario" name="fomrulario">
+
+    <h2>Calcula tu seguro:</h2>
+
+    <div id="seleccionMarca">
+      <label for="año">Selecciona una marca:</label><br>
+      <select id="marca" name="marca" class="marca">
+        <option value="" selected></option>
+        <option value="Audi">Audi</option>
+        <option value="Volkswagen">Volkswagen</option>
+        <option value="Seat">Seat</option>
+      </select>
+    </div>
+
+    <div id="cajaAño">
+      <label for="año">Selecciona un año:</label>
+      <div id="seleccionAño">
+        <select id="anos" name="año">
+        </select>
+      </div>
+    </div>
+
+    <div id="seleccionSeguro">
+      <label for="año">Selecciona un tipo de seguro:</label><br>
+      <div id="basico">
+        <label for="tipoB">
+          <input type="radio" name="tipo" id="tipoB>" value="1" checked="checked">
+          Básico
+        </label>
+      </div>
+      <div id="completo">
+        <label for="tipoC">
+          <input type="radio" name="tipo" id="tipoC>" value="2" checked="checked">
+          Completo
+        </label>
+      </div>
+    </div>
+
+    <div id="botonCalcular">
+      <button type="button" id="boton" onclick="precioTotal()">Calcular Seguro</button>
+    </div>
+
+
+  </form>
+
+  <div id="resultado">
+    <p class="text">Llame gratis al 902 123 848</p>
+
+  </div>
+
+
+
+</body>
+<script src="motor2.js"></script>
+
+</html>
